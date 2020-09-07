@@ -1,6 +1,3 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-# %%
 # --- Modules --- #
 from PyQt5.QtWidgets import *
 from PyQt5 import QtWidgets
@@ -8,8 +5,6 @@ from PyQt5 import QtGui, QtCore
 import sys
 import os
 
-
-# %%
 # --- Classes --- #
 # Combo Box
 class Combobox(QWidget):
@@ -131,8 +126,6 @@ class MainWindow(QMainWindow):
     def closeEvent(self, event):
         self.close()
 
-
-# %%
 # --- Initialization --- #
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -20,7 +20,7 @@ class Combobox(QWidget):
         self.cbox = QComboBox(self)
         self.cbox.setGeometry(0, 30, 150, 30)
         self.cbox.setStyleSheet('font: Courier; font-size: 10pt')
-        self.cbox.addItems(['None', '.txt', '.html','.jpg', '.png', '.py', 'jpeg'])
+        self.cbox.addItems(['None', '.txt', '.html','.jpg', '.png', '.py', '.jpeg'])
         self.cbox.setEditable(True)
 
         pal = self.cbox.palette()
@@ -99,7 +99,7 @@ class MainWindow(QMainWindow):
     def chext(self):
         fromex = self.fromc.getEx()
         toex = self.toc.getEx()
-        dir_name = QFileDialog.getExistingDirectory(self, 'Open Directory',os.path.join(os.path.expanduser("~"), "Desktop"), QFileDialog.ShowDirsOnly)
+        dir_name = QFileDialog.getExistingDirectory(self, 'Open Directory',os.path.join(os.path.expanduser("~"), "C:\\"), QFileDialog.ShowDirsOnly)
         
         if dir_name == '' or 'None' in [fromex, toex]:
             return
